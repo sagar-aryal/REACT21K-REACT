@@ -1,0 +1,16 @@
+.circle {
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.even {
+  background-color: aqua;
+}
+.odd {
+  background-color: blueviolet;
+}

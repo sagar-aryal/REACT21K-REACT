@@ -1,0 +1,29 @@
+.circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.pink {
+  background-color: pink;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.active {
+  background-image: url("https://media.giphy.com/media/YgceFa5istesE/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

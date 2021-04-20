@@ -1,0 +1,28 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.gameover_box {
+  background: rgb(205, 236, 203);
+  width: 100%;
+  min-height: 30%;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.gameover_box button {
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

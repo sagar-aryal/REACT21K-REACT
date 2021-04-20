@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Sagar",
+      "lastname": "Aryal",
+      "phonenumber": "+358455789234",
+      "role": "Student",
+      "message": "Important message fron json db"
+    },
+    {
+      "id": 2,
+      "firstname": "James",
+      "lastname": "Blunt",
+      "phonenumber": "+358488456129",
+      "role": "Singer",
+      "message": "Life is beautiful"
+    },
+    {
+      "id": 3,
+      "firstname": "Justin",
+      "lastname": "Timberland",
+      "phonenumber": "+358458900371",
+      "role": "Prime Minister",
+      "message": "Canada is a great country"
+    }
+  ]
+}
