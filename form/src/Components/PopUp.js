@@ -1,6 +1,16 @@
 import React from "react";
 
-const PopUp = ({ firstname, lastname, phonenumber, message, role }) => {
+const closeHandler = () => {
+  window.location.reload();
+};
+const PopUp = ({
+  firstname,
+  lastname,
+  phonenumber,
+  message,
+  role,
+  onClick,
+}) => {
   return (
     <div className="popUp">
       <div className="popUp-box">
@@ -10,8 +20,8 @@ const PopUp = ({ firstname, lastname, phonenumber, message, role }) => {
         <p>Phone Number {phonenumber}</p>
         <p>Role {role}</p>
         <p>Message {message}</p>
-        <button>Submit</button>
-        <button>Close</button>
+        <button onClick={onClick}>Yes, I am sure</button>
+        <button onClick={closeHandler}>Nope, don't want</button>
       </div>
     </div>
   );

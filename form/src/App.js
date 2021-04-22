@@ -7,12 +7,13 @@ import View from "./Components/View";
 
 class App extends Component {
   state = {
-    firstname: "",
-    lastname: "",
-    phonenumber: "",
-    role: "",
-    message: "",
-
+    inputData: {
+      firstname: "",
+      lastname: "",
+      phonenumber: "",
+      role: "",
+      message: "",
+    },
     openPopUp: false,
     notes: [],
   };
@@ -29,7 +30,10 @@ class App extends Component {
 
   handleChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value,
+      inputData: {
+        ...this.state.inputData,
+        [event.target.name]: event.target.value,
+      },
     });
     //console.log(event.target.value);
   };
@@ -41,19 +45,26 @@ class App extends Component {
     event.preventDefault();
   };
 
-  render() {
-    const props = {
-      firstname: this.state.firstname,
-      lastname: this.state.lastname,
-      phonenumber: this.state.phonenumber,
-      role: this.state.role,
-      message: this.state.message,
+  sendDataHandler = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(this.state.inputData),
     };
+    fetch("http://localhost:3001/notes", requestOptions);
+    // .then((res) => res.json())
+    //.then((data) => this.setState({ postId: data.id }));
+    alert("Note is posted", window.location.reload());
+  };
+
+  render() {
     return (
       <div>
         <Form onChange={this.handleChange} onClick={this.handlePopUp} />
-        <View {...props} />
-        {this.state.openPopUp && <PopUp {...props} />}
+        <View {...this.state.inputData} />
+        {this.state.openPopUp && (
+          <PopUp {...this.state.inputData} onClick={this.sendDataHandler} />
+        )}
         <NotesList notes={this.state.notes} />
       </div>
     );
