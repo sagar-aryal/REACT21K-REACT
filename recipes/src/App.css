@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+/* Header Styling */
+
+.header {
+  background-color: rgb(45, 235, 8);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fa-utensils {
+  margin-left: 0.5rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 20px;
+  list-style: none;
+  align-items: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-list {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+
+.nav-list:hover {
+  background-color: rgb(184, 250, 187);
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+  -radius: 10px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.nav-list-mobile,
+.menu-icon {
+  display: none;
+}
+
+/* Main Styling */
+.main {
+  background-color: aliceblue;
+  height: 70vh;
+}
+
+.home {
+  background: url("./assets/home.jpg") no-repeat center center fixed;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.about {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 2rem;
+}
+.recipes {
+  background-color: black;
+  height: 100%;
+  color: white;
+}
+/* Footer Styling */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(45, 235, 8);
+  height: 10vh;
+  color: white;
+}
