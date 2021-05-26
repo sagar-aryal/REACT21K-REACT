@@ -1,0 +1,32 @@
+.container-drag {
+  text-align: center;
+}
+
+.wip {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: gray;
+  border: 1px solid red;
+}
+
+.droppable {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: gray;
+  border: 1px solid red;
+}
+
+.dragaable {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+  background-color: yellowgreen;
+  border: 1px solid white;
+}
