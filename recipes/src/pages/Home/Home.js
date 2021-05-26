@@ -1,9 +1,8 @@
 import React from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Cooking from "../../assets/home.mp4";
 
 const Home = () => {
-  const history = useHistory();
   return (
     <div className="home">
       <div className="caption">
