@@ -3,12 +3,12 @@ import React, { Component } from "react";
 export default class Dragndrop extends Component {
   state = {
     tasks: [
-      { name: "A", category: "wip", bgcolor: "yellow" },
-      { name: "B", category: "wip", bgcolor: "yellow" },
-      { name: "C", category: "wip", bgcolor: "yellow" },
-      { name: "D", category: "complete", bgcolor: "pink" },
-      { name: "E", category: "complete", bgcolor: "pink" },
-      { name: "F", category: "complete", bgcolor: "pink" },
+      { id: "1", name: "A", category: "wip", bgcolor: "yellow" },
+      { id: "2", name: "B", category: "wip", bgcolor: "yellow" },
+      { id: "3", name: "C", category: "wip", bgcolor: "yellow" },
+      { id: "4", name: "D", category: "complete", bgcolor: "pink" },
+      { id: "5", name: "E", category: "complete", bgcolor: "pink" },
+      { id: "6", name: "F", category: "complete", bgcolor: "pink" },
     ],
   };
 
